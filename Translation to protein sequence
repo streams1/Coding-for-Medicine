@@ -1,0 +1,14 @@
+sequence = open("/share/data/adh/ALDH.txt")
+line = sequence.readline()
+line = line.strip()
+
+
+d = {}
+f = open("/share/data/genetic-code.txt")
+gen_code = f.readlines()
+for w in gen_code:
+  parts = w.split()
+  d[parts[0]]=parts[1]
+for w in range(0,len(line),3):
+  print d[line[w:w+3]],
+  
