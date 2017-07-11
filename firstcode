@@ -1,0 +1,25 @@
+SEQ="ATTGGCTGCCGCGCGGGGCGGGGAGCGGGGTCGGCTCAGTGGCCCTGAGACCCTAGCTCTGCTCTCGGTCCGCTCGCTGTCCGCTAGCCCGCTGCGATGTTGCGCGCTGCCGCCCGCTTCGGGCCCCGCCTGGGCCGCCG"
+index = range(0,(len(SEQ)))
+numberA = 0
+numberT = 0
+numberC = 0
+numberG = 0
+numother = 0
+RES =''
+for r in index:
+     RES = RES+ SEQ[r]
+     if SEQ[r] == 'A':
+        numberA +=1
+     if SEQ[r] == 'T':
+        numberT +=1
+     if SEQ[r] == 'C':
+        numberC +=1
+     if SEQ[r] == 'G':
+        numberG +=1
+print (RES)
+print ("\nTotal number is: ",len(SEQ))
+print ("\nNumber of A is: ", numberA)
+print ("Number of T is: ", numberT)
+print ("Number of C is: ", numberC)
+print ("Number of G is: ", numberG) 
+
