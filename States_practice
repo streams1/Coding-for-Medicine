@@ -6,4 +6,6 @@ for w in lines:
   d[parts[0]]=parts[1]
   if len(parts) > 2:
      d[parts[0]]=parts[1]+" "+parts[2]
-print d
+x=raw_input("enter a state abbrev: ")
+print d[x]
+
